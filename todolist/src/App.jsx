@@ -7,8 +7,13 @@ function App() {
   
   return (
     <>
-    <TareaForm/>
-    <TareaLista/>
+    
+    <div className='container'>
+    <h1>ToDoList</h1>
+      <TareaForm/>
+      <TareaLista/>
+    </div>
+    
     </>
   )
 }

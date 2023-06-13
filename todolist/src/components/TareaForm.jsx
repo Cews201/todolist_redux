@@ -15,14 +15,14 @@ function TareaForm(){
         }
     
     return(
-        <div>
+        <div  className='container'>
             <form onSubmit={agregarTarea }>
                 <input 
                     onChange={(e) => setTarea(e.target.value)} 
                     type="text"
                     placeholder="Agregar tarea"
                     value={tarea}/>
-                <button type="submit">
+                <button type="submit" >
                     Agregar Tarea
                 </button>
             </form>

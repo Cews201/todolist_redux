@@ -27,11 +27,11 @@ function Tarea({tarea}){
     const inputTareaEditada = <input type='text' value={tareaEditada} onChange={actualizarTareaEditada} />;
 
     return(
-        <div className='tarea'>
+        <div className='tarea-1'>
             {
                 editando ? inputTareaEditada : textoTarea
             }
-            <button onClick={editarTarea}>
+            <button onClick={editarTarea} className="button-3">
                 {
                     editando ? 'Guardar' : 'Editar'
                 }                
@@ -39,7 +39,7 @@ function Tarea({tarea}){
             <button onClick={() => dispatch({
                 type:'ELIMINAR',
                 payload: tarea
-            })} className='btn-eliminar'>
+            })} className='button-2'>
                 Eliminar
             </button>
         </div>
